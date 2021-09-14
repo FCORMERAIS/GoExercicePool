@@ -16,7 +16,7 @@ func PrintComb() {
 			chiffre3++
 			chiffre2 = 0
 		}
-		if chiffre1 != chiffre2 && chiffre2 != chiffre3 && chiffre3 != chiffre1 {
+		if chiffre1 != chiffre2 && chiffre2 != chiffre3 && chiffre3 != chiffre1 && chiffre3 > chiffre2 && chiffre2 > chiffre1 {
 			z01.PrintRune(rune(chiffre1))
 			z01.PrintRune(rune(chiffre2))
 			z01.PrintRune(rune(chiffre3))

@@ -8,12 +8,7 @@ func PrintComb() {
 	chiffre3 := '0'
 	for i := 0; i < 700; i++ {
 		chiffre1++
-		if i == 699 {
-			z01.PrintRune(rune('7'))
-			z01.PrintRune(rune('8'))
-			z01.PrintRune(rune('9'))
-			z01.PrintRune('\n')
-		else if chiffre1 != chiffre2 && chiffre2 != chiffre3 && chiffre3 != chiffre1 && chiffre3 < chiffre2 && chiffre2 < chiffre1 {
+		if chiffre1 != chiffre2 && chiffre2 != chiffre3 && chiffre3 != chiffre1 && chiffre3 < chiffre2 && chiffre2 < chiffre1 && chiffre3 != 7 {
 			z01.PrintRune(rune(chiffre3))
 			z01.PrintRune(rune(chiffre2))
 			z01.PrintRune(rune(chiffre1))
@@ -27,7 +22,12 @@ func PrintComb() {
 		if chiffre2 == '9' {
 			chiffre3++
 			chiffre2 = '0'
-		
+		}
+		if i == 699 {
+			z01.PrintRune(rune('7'))
+			z01.PrintRune(rune('8'))
+			z01.PrintRune(rune('9'))
+			z01.PrintRune('\n')
 		}
 
 	}

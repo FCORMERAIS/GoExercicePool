@@ -23,13 +23,12 @@ func PrintComb() {
 			chiffre3++
 			chiffre2 = '0'
 		}
-		if i == 788  {
+		if i == 788 {
 			z01.PrintRune(rune('7'))
 			z01.PrintRune(rune('8'))
 			z01.PrintRune(rune('9'))
 			z01.PrintRune('\n')
 		}
-		
-	
+
 	}
 }

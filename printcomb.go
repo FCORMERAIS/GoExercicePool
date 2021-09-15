@@ -27,7 +27,6 @@ func PrintComb() {
 		z01.PrintRune(rune('8'))
 		z01.PrintRune(rune('9'))
 		z01.PrintRune('\n')
-		
 
 	}
 }

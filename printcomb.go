@@ -6,7 +6,7 @@ func PrintComb() {
 	chiffre1 := '0'
 	chiffre2 := '0'
 	chiffre3 := '0'
-	for i := 0; i < 700; i++ {
+	for i := 0; i < 600; i++ {
 		chiffre1++
 		if chiffre1 != chiffre2 && chiffre2 != chiffre3 && chiffre3 != chiffre1 && chiffre3 < chiffre2 && chiffre2 < chiffre1 && chiffre3 != 7 {
 			z01.PrintRune(rune(chiffre3))

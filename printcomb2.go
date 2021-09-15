@@ -19,11 +19,11 @@ func PrintComb2() {
 				rune4 = 0
 				rune3++
 			}
-			if rune3 == 9{
+			if rune3 == 9 {
 				rune2++
 				rune3 = 0
 			}
-			if rune2 == 9{
+			if rune2 == 9 {
 				rune1++
 				rune2 = 0
 			}

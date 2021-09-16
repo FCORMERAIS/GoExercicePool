@@ -45,13 +45,6 @@ func PrintComb2() {
 			rune2++
 			rune3 = '0'
 			rune4 = '0'
-			z01.PrintRune(rune(rune1))
-			z01.PrintRune(rune(rune2))
-			z01.PrintRune(rune(' '))
-			z01.PrintRune(rune(rune3))
-			z01.PrintRune(rune(rune4))
-			z01.PrintRune(rune(','))
-			z01.PrintRune(rune(' '))
 		}
 		if rune4 == '9' {
 			rune4 = '0'

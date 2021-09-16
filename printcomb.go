@@ -13,7 +13,7 @@ func PrintComb() {
 			z01.PrintRune(rune(chiffre2))
 			z01.PrintRune(rune(chiffre1))
 		}
-			if chiffre3 != 7 {
+		if chiffre3 != 7 {
 			z01.PrintRune(',')
 			z01.PrintRune(' ')
 		}

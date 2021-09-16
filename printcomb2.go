@@ -36,8 +36,8 @@ func PrintComb2() {
 		}
 		if rune3 == '9' && rune4 == '9' {
 			rune2++
-			rune3 = '0'
-			rune4 = '0'
+			rune3 = rune1
+			rune4 = rune2
 		}
 		if rune4 == '9' {
 			rune4 = '0'

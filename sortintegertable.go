@@ -6,6 +6,7 @@ func SortIntegerTable(table []int) {
 		minimum := 1000000
 		for k := i; k < len(table)-1; k++ {
 			if table[k] < minimum {
+				minimum = table[k]
 				index = k
 			}
 		}

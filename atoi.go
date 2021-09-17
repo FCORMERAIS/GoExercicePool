@@ -6,7 +6,7 @@ func Atoi(s string) int {
 	negative := 0
 	for i := len(s) - 1; i >= 0; i-- {
 		if int(s[i]) == 45 {
-			negative = 1
+			negative += 1
 		} else if 48 > int(s[i]) || int(s[i]) >= 58 {
 			return 0
 		} else {
@@ -17,6 +17,8 @@ func Atoi(s string) int {
 	if negative == 1 {
 		intA = -intA
 		return intA
+	} else if negative > 1 {
+		return 0
 	} else {
 		return intA
 	}

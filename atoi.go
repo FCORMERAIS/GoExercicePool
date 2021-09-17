@@ -20,5 +20,4 @@ func Atoi(s string) int {
 	} else {
 		return intA
 	}
-
 }

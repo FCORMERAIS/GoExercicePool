@@ -2,10 +2,10 @@ package piscine
 
 func StrRev(s string) string {
 	result := ""
-	letter := ' '
+	//letter := ' '
 	for i := len(s); i == 0; i-- {
-		letter = rune('1')
-		result = result + string(letter)
+		//letter = rune(s[i])
+		result = result + "1"
 	}
 	return result
 }

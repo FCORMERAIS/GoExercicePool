@@ -6,5 +6,4 @@ func StrRev(s string) string {
 		result[i], result[j] = result[j], result[i]
 	}
 	return string(result)
-
 }

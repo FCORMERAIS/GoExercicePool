@@ -3,12 +3,22 @@ package piscine
 func Atoi(s string) int {
 	puissanceDix := 1
 	intA := 0
+	negative := 0
 	for i := len(s) - 1; i >= 0; i-- {
-		intA = intA + int(s[i]%48)*puissanceDix
-		puissanceDix = puissanceDix * 10
-		if 48 > int(s[i]) || int(s[i]) >= 58 {
+		if int(s[i]) != 45 {
+			negative = 1
+		} else if 48 > int(s[i]) || int(s[i]) >= 58 {
 			return 0
+		} else {
+			intA = intA + int(s[i]%48)*puissanceDix
+			puissanceDix = puissanceDix * 10
 		}
 	}
-	return intA
+	if negative == 1 {
+		intA = -intA
+		return intA
+	} else {
+		return intA
+	}
+
 }

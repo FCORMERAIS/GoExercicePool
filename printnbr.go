@@ -8,7 +8,7 @@ func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune(rune('-'))
 	}
-	for n/10 == 0 {
+	for k := 0; 0 == n/10; k++ {
 		nb = n % 10
 		liste = append(liste, nb)
 		n = n / 10

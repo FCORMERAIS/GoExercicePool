@@ -13,7 +13,7 @@ func PrintNbr(n int) {
 		liste = append(liste, nb)
 		n = n / 10
 	}
-	for i := len(liste) - 1; i > 0; i-- {
+	for i := 0; i > len(liste)-1; i++ {
 		z01.PrintRune(rune(liste[i]))
 	}
 }

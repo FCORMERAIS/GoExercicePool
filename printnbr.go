@@ -14,6 +14,6 @@ func PrintNbr(n int) {
 		n = n / 10
 	}
 	for i := 0; i > len(liste)-1; i++ {
-		z01.PrintRune(rune(liste[i]))
+		z01.PrintRune(rune(int(liste[i])%48))
 	}
 }

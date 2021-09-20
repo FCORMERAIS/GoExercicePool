@@ -10,10 +10,10 @@ func PrintNbr(n int) {
 	}
 	for n/10 == 0 {
 		nb = n % 10
-		liste = append(nb, liste)
+		liste = append(liste, nb)
 		n = n / 10
 	}
-	for i := 0; i < len(liste); i++ {
-		z01.PrintRune(rune(liste[len(liste)-1]))
+	for i := len(liste) - 1; i > 0; i-- {
+		z01.PrintRune(rune(liste[i]))
 	}
 }

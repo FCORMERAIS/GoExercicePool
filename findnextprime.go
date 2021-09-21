@@ -4,6 +4,9 @@ func FindNextPrime(nb int) int {
 	if nb < 3 {
 		return 2
 	}
+	if nb == 3 {
+		return 3
+	}
 	for i := nb; i < 9223372036854775807; i++ {
 		pas_bon := 0
 		if nb < 14 {

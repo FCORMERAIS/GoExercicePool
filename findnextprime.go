@@ -44,8 +44,8 @@ func FindNextPrime(nb int) int {
 			}
 		}
 		if pas_bon == 0 {
-			return i
+			return i +2
 		}
 	}
-	return 0
+	return 1
 }

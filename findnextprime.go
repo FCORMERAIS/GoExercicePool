@@ -19,7 +19,7 @@ func FindNextPrime(nb int) int {
 		if i%2 == 0 || i%3 == 0 || i%5 == 0 || i%7 == 0 || i%11 == 0 || i%13 == 0 {
 			pas_bon = 1
 		} else {
-			for a := nb-1; a >= 13; a-- {
+			for a := nb - 1; a >= 13; a-- {
 				if i%a == 0 {
 					pas_bon = 1
 				}

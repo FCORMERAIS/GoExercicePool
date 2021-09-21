@@ -4,6 +4,9 @@ func FindNextPrime(nb int) int {
 	if nb < 3 {
 		return 2
 	}
+	if nb == 3 {
+		return 3
+	}
 	if nb == 4 {
 		return 5
 	}

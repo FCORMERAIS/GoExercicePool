@@ -5,8 +5,12 @@ func FindNextPrime(nb int) int {
 		return 2
 	}
 	for i := nb; i < 9223372036854775807; i++ {
-		for a := 2; a < i; a++ {
-			if i%a != 0 {
+		pas_bon := 0
+		for a := nb / 2; a > 0; a-- {
+			if i%a == 0 {
+				pas_bon = 1
+			}
+			if pas_bon == 0 {
 				return i
 			}
 		}

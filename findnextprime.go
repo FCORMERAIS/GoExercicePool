@@ -1,6 +1,7 @@
 package piscine
 
 func FindNextPrime(nb int) int {
+	c := 0
 	if nb < 3 {
 		return 2
 	}
@@ -37,8 +38,12 @@ func FindNextPrime(nb int) int {
 			pas_bon = 1
 		} else {
 			for a := 29; a >= nb-1; a++ {
-				if i%a == 0 {
-					pas_bon = 1
+				if a%2 == 0 {
+					c = 0
+				} else {
+					if i%a == 0 {
+						pas_bon = 1
+					}
 				}
 			}
 		}
@@ -46,5 +51,5 @@ func FindNextPrime(nb int) int {
 			return i
 		}
 	}
-	return 1
+	return c
 }

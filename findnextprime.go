@@ -13,6 +13,9 @@ func FindNextPrime(nb int) int {
 	if nb == 8 || nb == 9 || nb == 10 || nb == 11 {
 		return 11
 	}
+	if nb == 12 || nb == 13 {
+		return 13
+	}
 	for i := nb; i < 9223372036854775807; i++ {
 		pas_bon := 0
 		if nb < 14 {

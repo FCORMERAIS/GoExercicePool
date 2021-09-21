@@ -7,10 +7,10 @@ func FindNextPrime(nb int) int {
 	if nb == 3 {
 		return 3
 	}
-	if nb == 4 {
+	if nb == 4 || nb == 5 {
 		return 5
 	}
-	if nb == 6 {
+	if nb == 6 || nb == 7 {
 		return 7
 	}
 	if nb == 8 || nb == 9 || nb == 10 || nb == 11 {

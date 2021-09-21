@@ -5,7 +5,7 @@ func FindNextPrime(nb int) int {
 		return 2
 	}
 	if nb == 4 {
-		return 5
+		return 4
 	}
 	for i := nb; i < 9223372036854775807; i++ {
 		pas_bon := 0

@@ -37,7 +37,7 @@ func FindNextPrime(nb int) int {
 		if i%2 == 0 || i%3 == 0 || i%5 == 0 || i%7 == 0 || i%11 == 0 || i%13 == 0 || i%17 == 0 || i%19 == 0 || i%23 == 0 || i%29 == 0 {
 			pas_bon = 1
 		} else {
-			for a := nb-1; a <= 29; a-- {
+			for a := nb - 1; a <= 29; a-- {
 				if a%2 == 0 {
 					c = 0
 				} else {

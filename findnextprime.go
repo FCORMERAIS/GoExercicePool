@@ -6,7 +6,7 @@ func FindNextPrime(nb int) int {
 	}
 	for i := nb; i < 9223372036854775807; i++ {
 		pas_bon := 0
-		for a := nb / 2; a < 0; a-- {
+		for a := nb / 2; a > 0; a-- {
 			if i%a == 0 {
 				pas_bon = 1
 			}

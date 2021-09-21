@@ -10,10 +10,11 @@ func FindNextPrime(nb int) int {
 			if i%a == 0 {
 				pas_bon = 1
 			}
-			if pas_bon == 0 {
-				return i
-			}
 		}
+		if pas_bon == 0 {
+			return i
+		}
+		
 	}
 	return 0
 }

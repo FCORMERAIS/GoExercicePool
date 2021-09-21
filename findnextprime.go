@@ -9,7 +9,7 @@ func FindNextPrime(nb int) int {
 		if i%2 == 0 || i%3 == 0 || i%5 == 0 {
 			pas_bon = 1
 		} else {
-			for a := nb / 2; a >= 0; a-- {
+			for a := nb; a >= 0; a-- {
 				if i%a == 0 {
 					pas_bon = 1
 				}

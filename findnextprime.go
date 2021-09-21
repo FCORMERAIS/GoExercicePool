@@ -37,6 +37,7 @@ func FindNextPrime(nb int) int {
 			pas_bon = 1
 		} else {
 			for a := 29; a <= nb-1; a++ {
+				return 0
 				if i%a == 0 {
 					pas_bon = 1
 				}

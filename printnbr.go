@@ -13,7 +13,7 @@ func PrintNbr(n int) {
 		liste = append(liste, nb)
 		n = n / 10
 	}
-	
+
 	if len(liste) == 0 {
 		z01.PrintRune(rune('0'))
 	} else {

@@ -13,6 +13,9 @@ func IsAlpha(s string) bool {
 		if int(sentence[i]) <= 122 && int(sentence[i]) >= 97 {
 			counter++
 		}
+		if int(sentence[i]) <=57 && int(sentence[i]) >= 48{
+			counter++
+		}
 	}
 	if counter == len(s) {
 		return true

@@ -16,5 +16,9 @@ func Index(s string, toFind string) int {
 			counter_motif++
 		}
 	}
-	return counter_motif
+	if counter_motif == 0 {
+		return -1
+	} else {
+		return counter_motif
+	}
 }

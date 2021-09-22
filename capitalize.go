@@ -3,7 +3,7 @@ package piscine
 func Capitalize(s string) string {
 	sentence := []rune(s)
 	str := ""
-	for i := 0; i < len(sentence); i++ {
+	for i := 1; i < len(sentence); i++ {
 		if sentence[i] >= 'a' && sentence[i] <= 'z' {
 			if sentence[i-1] >= 'a' && sentence[i-1] <= 'z' || sentence[i-1] >= '0' && sentence[i-1] <= '9' {
 				sentence[i] = sentence[i] + 0

@@ -3,6 +3,9 @@ package piscine
 func Capitalize(s string) string {
 	sentence := []rune(s)
 	str := ""
+	if sentence[0] >= 'a' && sentence[0] <= 'z' {
+		sentence[0] = sentence[0] -32
+	}
 	for i := 1; i < len(sentence); i++ {
 		if sentence[i] >= 'a' && sentence[i] <= 'z' {
 			if sentence[i-1] >= 'a' && sentence[i-1] <= 'z' || sentence[i-1] >= '0' && sentence[i-1] <= '9' {

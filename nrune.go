@@ -3,8 +3,8 @@ package piscine
 func NRune(s string, n int) rune {
 	if n < len(s) && n > 0 {
 		sentence := []rune(s)
-		if rune(sentence[n-1]) == '!' {
-			return '!'
+		if len(s) == n {
+			return rune(sentence[n-2])
 		}
 		return rune(sentence[n-1])
 	}

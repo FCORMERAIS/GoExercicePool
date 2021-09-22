@@ -4,7 +4,7 @@ func Capitalize(s string) string {
 	sentence := []rune(s)
 	str := ""
 	if sentence[0] >= 'a' && sentence[0] <= 'z' {
-		sentence[0] = sentence[0] -32
+		sentence[0] = sentence[0] - 32
 	}
 	for i := 1; i < len(sentence); i++ {
 		if sentence[i] >= 'a' && sentence[i] <= 'z' {

@@ -13,7 +13,7 @@ func Index(s string, toFind string) int {
 			}
 		}
 		if counter == len(motif) {
-			counter_motif++
+			return i
 		}
 	}
 	if counter_motif == 0 {

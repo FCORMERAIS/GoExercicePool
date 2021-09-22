@@ -5,10 +5,10 @@ func Compare(a, b string) int {
 		return 0
 	}
 	if len(a) < len(b) {
-		return -1
+		return 1
 	}
 	if len(a) > len(b) {
-		return 1
+		return -1
 	}
 	return 0
 }

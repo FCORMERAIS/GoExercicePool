@@ -18,7 +18,7 @@ func TrimAtoi(s string) int {
 		if 48 >= int(s[i]) || int(s[i]) >= 57 {
 			result = result + 0
 		} else if int(s[i]) == 57 {
-			result = result + int(s[i]%48)*puissanceDix
+			result = result + 9*puissanceDix
 			puissanceDix = puissanceDix * 10
 		} else {
 			result = result + int(s[i]%48)*puissanceDix

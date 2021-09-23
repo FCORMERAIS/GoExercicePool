@@ -10,6 +10,7 @@ func PrintNbrInOrder(n int) {
 		liste = append(liste, nb)
 		n = n / 10
 	}
+	liste = append(liste, n)
 	index := 0
 	for i := 0; i < len(liste)-1; i++ {
 		minimum := 1000000

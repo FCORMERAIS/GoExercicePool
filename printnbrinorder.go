@@ -2,7 +2,7 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbrInOrder(n int) {
+func PrintNbrInOrder(n int) []int {
 	liste := []int{}
 	nb := 0
 	for k := 0; 0 == n/10; k++ {
@@ -10,6 +10,7 @@ func PrintNbrInOrder(n int) {
 		liste = append(liste, nb)
 		n = n / 10
 	}
+	return liste
 	index := 0
 	for i := 0; i < len(liste)-1; i++ {
 		minimum := 1000000

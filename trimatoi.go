@@ -5,7 +5,7 @@ func TrimAtoi(s string) int {
 	puissanceDix := 1
 	negative := 0
 	for i := len(s) - 1; i >= 0; i-- {
-		if int(s[i]) == 45 && i == 0 {
+		if int(s[i]) == 45 {
 			negative += 1
 		}
 		if 48 > int(s[i]) || int(s[i]) >= 57 {

@@ -22,6 +22,6 @@ func PrintNbrInOrder(n int) {
 		liste[i], liste[index] = liste[index], liste[i]
 	}
 	for i := 0; i < len(liste); i++ {
-		z01.PrintRune(rune(liste[i])+48)
+		z01.PrintRune(rune(liste[i]) + 48)
 	}
 }

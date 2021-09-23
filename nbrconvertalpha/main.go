@@ -38,24 +38,26 @@ func Atoi(s string) int {
 
 func main() {
 	argument := os.Args
-	if maj(argument[1]) == 1 {
-		for i := 2; i < len(argument); i++ {
-			df := Atoi(argument[i])
-			if 64+df <= 90 && 64+df >= 65 {
-				z01.PrintRune(rune(64 + df))
-			} else {
-				z01.PrintRune(rune(' '))
+	if len(argument) > 0 {
+		if maj(argument[1]) == 1 {
+			for i := 2; i < len(argument); i++ {
+				df := Atoi(argument[i])
+				if 64+df <= 90 && 64+df >= 65 {
+					z01.PrintRune(rune(64 + df))
+				} else {
+					z01.PrintRune(rune(' '))
+				}
+			}
+		} else {
+			for k := 1; k < len(argument); k++ {
+				df := Atoi(argument[k])
+				if df+96 >= 97 && 96+df <= 122 {
+					z01.PrintRune(rune(96 + df))
+				} else {
+					z01.PrintRune(rune(' '))
+				}
 			}
 		}
-	} else {
-		for k := 1; k < len(argument); k++ {
-			df := Atoi(argument[k])
-			if df+96 >= 97 && 96+df <= 122 {
-				z01.PrintRune(rune(96 + df))
-			} else {
-				z01.PrintRune(rune(' '))
-			}
-		}
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }

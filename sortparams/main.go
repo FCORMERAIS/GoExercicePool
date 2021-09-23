@@ -31,8 +31,8 @@ func main() {
 		list = append(list, argument[i])
 	}
 	list = SortIntegerTable(list)
-	for i := 0; i < len(argument); i++ {
-		for k := 0; k < len(list[i]); k++ {
+	for i := 0; i < len(argument)-1; i++ {
+		for k := 0; k < len(list[i])-1; k++ {
 			z01.PrintRune(rune(list[i][k]))
 		}
 		z01.PrintRune(rune('\n'))

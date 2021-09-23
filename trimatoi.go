@@ -10,7 +10,7 @@ func TrimAtoi(s string) int {
 	for k := 0; negative == 0 && len(s) > k; k++ {
 		if 48 <= int(s[k]) && int(s[k]) <= 57 {
 			negative = -9999
-		} else if rune(s[k]) == '-' {
+		} else if rune(s[k]) == 45 {
 			negative += 0
 		}
 	}

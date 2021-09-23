@@ -4,6 +4,9 @@ func TrimAtoi(s string) int {
 	result := 0
 	puissanceDix := 1
 	negative := 0
+	if len(s) == 0 {
+		return 0
+	}
 	for k := 0; negative == 0; k++ {
 		if 48 > int(s[k]) || int(s[k]) >= 57 {
 			negative = -9999

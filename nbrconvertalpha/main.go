@@ -38,7 +38,7 @@ func Atoi(s string) int {
 
 func main() {
 	argument := os.Args
-	if len(argument) > 0 {
+	if len(argument) > 1 {
 		if maj(argument[1]) == 1 {
 			for i := 2; i < len(argument); i++ {
 				df := Atoi(argument[i])

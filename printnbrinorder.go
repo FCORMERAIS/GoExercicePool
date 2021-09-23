@@ -3,12 +3,12 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-	liste := []int{}
+	liste := []rune{}
 	nb := 0
 	for k := 0; 0 != n/10; k++ {
 		nb = n % 10
 		n = n - n%10
-		liste = append(liste, nb)
+		liste = append(liste, rune(nb))
 		n = n / 10
 	}
 	for i := 0; i < len(liste); i++ {

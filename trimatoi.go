@@ -1,7 +1,5 @@
 package piscine
 
-import "github.com/01-edu/z01"
-
 func TrimAtoi(s string) int {
 	puissanceDix := 1
 	intA := 0

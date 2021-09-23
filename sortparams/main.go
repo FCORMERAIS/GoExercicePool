@@ -14,7 +14,7 @@ func SortIntegerTable(table []string) []string {
 	for i := 0; i <= len(table)-1; i++ {
 		minimum := table[i]
 		for k := i; k < len(table); k++ {
-			if table[k] < minimum {
+			if table[k] <= minimum {
 				minimum = table[k]
 				index = k
 			}

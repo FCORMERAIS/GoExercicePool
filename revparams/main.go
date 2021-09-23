@@ -17,7 +17,7 @@ func PrintName(s string) {
 
 func main() {
 	argument := os.Args
-	for i := len(argument) - 1; i > 1; i++ {
+	for i := len(argument) - 1; i > 1; i-- {
 		PrintName(argument[i])
 		z01.PrintRune(rune('\n'))
 	}

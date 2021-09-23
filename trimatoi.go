@@ -8,7 +8,6 @@ func TrimAtoi(s string) int {
 		return 0
 	}
 	for k := 0; negative == 0 && len(s) > k; k++ {
-		return 0
 		if 48 > int(s[k]) || int(s[k]) >= 57 {
 			negative = -9999
 		} else if int(s[k]) == 45 {

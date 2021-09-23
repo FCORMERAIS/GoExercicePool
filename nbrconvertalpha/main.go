@@ -5,7 +5,8 @@ import (
 
 	"github.com/01-edu/z01"
 )
-func maj(s string) int{
+
+func maj(s string) int {
 	if s == "--upper" {
 		return 1
 	} else {
@@ -40,17 +41,17 @@ func main() {
 	if maj(argument[1]) == 1 {
 		for i := 2; i < len(argument); i++ {
 			df := Atoi(argument[i])
-			if 64+df <= 90 && 64 +df >= 65 {
-				z01.PrintRune(rune(64+df))
-			}else {
+			if 64+df <= 90 && 64+df >= 65 {
+				z01.PrintRune(rune(64 + df))
+			} else {
 				z01.PrintRune(rune(' '))
 			}
 		}
-	}else {
+	} else {
 		for k := 1; k < len(argument); k++ {
 			df := Atoi(argument[k])
 			if df+96 >= 97 && 96+df <= 122 {
-				z01.PrintRune(rune(96+df))
+				z01.PrintRune(rune(96 + df))
 			} else {
 				z01.PrintRune(rune(' '))
 			}

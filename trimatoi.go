@@ -15,9 +15,6 @@ func TrimAtoi(s string) int {
 		}
 	}
 	for i := len(s) - 1; i >= 0; i-- {
-		if int(s[i]) == 45 && result == 0 {
-			negative += 1
-		}
 		if 48 > int(s[i]) || int(s[i]) >= 57 {
 			result = result + 0
 		} else {

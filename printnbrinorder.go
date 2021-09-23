@@ -7,7 +7,6 @@ func PrintNbrInOrder(n int) {
 	nb := 0
 	for k := 0; 0 != n/10; k++ {
 		nb = n % 10
-		n = n - n%10
 		liste = append(liste, rune(nb))
 		n = n / 10
 	}

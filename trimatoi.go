@@ -4,7 +4,7 @@ func TrimAtoi(s string) int {
 	result := 0
 	puissanceDix := 1
 	negative := 0
-	for i := len(s) - 1; i > 0; i-- {
+	for i := len(s) - 1; i >= 0; i-- {
 		if int(s[i]) == 45 && i == 0 {
 			negative += 1
 		}

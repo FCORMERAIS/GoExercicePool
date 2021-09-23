@@ -25,4 +25,5 @@ func PrintNbrInOrder(n int) []int {
 	for i := 0; i < len(liste); i++ {
 		z01.PrintRune(rune(liste[i]))
 	}
+	return liste
 }

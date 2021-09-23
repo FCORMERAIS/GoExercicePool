@@ -8,7 +8,7 @@ import (
 
 func PrintName(s string) {
 	for i := 0; i < len(s); i++ {
-		if s[i] != '.' && s[i] != '/' && s[i] != ' ' {
+		if s[i] != '.' && s[i] != '/' {
 			z01.PrintRune(rune(s[i]))
 		}
 	}
@@ -18,4 +18,5 @@ func main() {
 	argument := os.Args
 	text := argument[0]
 	PrintName(text)
+	z01.PrintRune(rune('\n'))
 }

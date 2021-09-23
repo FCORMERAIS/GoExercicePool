@@ -4,6 +4,13 @@ func TrimAtoi(s string) int {
 	result := 0
 	puissanceDix := 1
 	negative := 0
+	for k := 0; negative == 0; k++ {
+		if 48 > int(s[k]) || int(s[k]) >= 57 {
+			negative = -9999
+		} else if int(s[k]) == 45 && result == 0 {
+			negative = 1
+		}
+	}
 	for i := len(s) - 1; i >= 0; i-- {
 		if int(s[i]) == 45 && result == 0 {
 			negative += 1

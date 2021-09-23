@@ -7,7 +7,7 @@ import (
 )
 
 func PrintName(s string) {
-	for i := 1; i < len(s); i++ {
+	for i := 0; i < len(s)-1; i++ {
 		if s[i] != '.' && s[i] != '/' {
 			z01.PrintRune(rune(s[i]))
 		}

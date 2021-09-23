@@ -7,9 +7,10 @@ import (
 )
 
 func PrintName(s string) {
-	for i := 0; i < len(s); i++ {
-		if s[i] != '.' && s[i] != '/' {
-			z01.PrintRune(rune(s[i]))
+	sentence := []rune(s)
+	for i := 0; i < len(sentence); i++ {
+		if sentence[i] != '.' && sentence[i] != '/' {
+			z01.PrintRune(rune(sentence[i]))
 		}
 	}
 }

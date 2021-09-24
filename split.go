@@ -1,7 +1,7 @@
 package piscine
 
 func Split(s, sep string) []string {
-	compteur := 1
+	compteur := 0
 	str := ""
 	var list1 []string
 	for i := 0; i < len(s); i++ {

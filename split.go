@@ -4,6 +4,9 @@ func Split(s, sep string) []string {
 	compteur := 1
 	str := ""
 	var list1 []string
+	if len(s) == 0 {
+		return list1
+	}
 	for i := 0; i < len(s); i++ {
 		if s[i] != sep[0] {
 			compteur++

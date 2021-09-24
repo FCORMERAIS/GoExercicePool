@@ -7,7 +7,7 @@ func SplitWhiteSpaces(s string) []string {
 	for i := 0; i < len(s); i++ {
 		if s[i] != ' ' {
 			compteur++
-		} else {
+		} else if s[i] == ' ' && compteur != 0 {
 			for k := 0; k < compteur; k++ {
 				str = str + string(s[i-compteur+k])
 			}

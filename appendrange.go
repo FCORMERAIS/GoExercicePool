@@ -8,7 +8,7 @@ func AppendRange(min, max int) []int {
 		answer = append(answer, min)
 		return answer
 	} else {
-		for i := max - min-1; i < max; i++ {
+		for i := max - min - 1; i < max; i++ {
 			answer = append(answer, i)
 		}
 		return answer

@@ -7,7 +7,7 @@ func Split(s, sep string) []string {
 	if len(s) <= 0 {
 		return list1
 	}
-	if str[0] == 'H' {
+	if s[0] == 'H' {
 		str = "H"
 	}
 	for i := 0; i < len(s); i++ {

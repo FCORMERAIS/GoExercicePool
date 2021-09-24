@@ -7,7 +7,7 @@ func MakeRange(min, max int) []int {
 		return pas_bon
 	}
 	for i := min; i < max; i++ {
-		answer[i] = i + 1
+		answer[i] = i
 	}
 	return answer
 }

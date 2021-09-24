@@ -22,7 +22,6 @@ func Split(s, sep string) []string {
 				str = ""
 				compteur = 0
 				i = i + len(sep) - 1
-
 			}
 		}
 	}

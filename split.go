@@ -16,11 +16,6 @@ func Split(s, sep string) []string {
 			}
 			if compteur_sep == len(sep) {
 				for k := 0; k < compteur; k++ {
-					if i-compteur+k < 1 {
-						for p := i - compteur + k; p == 1; p++ {
-							compteur++
-						}
-					}
 					str = str + string(s[i-compteur+k])
 				}
 				list1 = append(list1, str)

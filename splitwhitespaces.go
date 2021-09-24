@@ -18,6 +18,7 @@ func SplitWhiteSpaces(s string) []string {
 	}
 	for i := compteur; i > 0; i-- {
 		str = str + string(s[len(s)-1-compteur])
+		compteur--
 	}
 	list1 = append(list1, str)
 	return list1

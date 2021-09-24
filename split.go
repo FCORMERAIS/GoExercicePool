@@ -21,9 +21,8 @@ func Split(s, sep string) []string {
 				list1 = append(list1, str)
 				str = ""
 				compteur = 0
-				if len(s) > 1 {
-					i = i + len(sep)
-				}
+				i = i + len(sep) - 1
+
 			}
 		}
 	}

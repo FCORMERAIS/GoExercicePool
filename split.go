@@ -12,8 +12,6 @@ func Split(s, sep string) []string {
 			for j := 0; j < len(sep); j++ {
 				if len(s)-i >= len(sep) && s[i+j] == sep[j] {
 					compteur_sep++
-				} else {
-					compteur++
 				}
 			}
 			if compteur_sep == len(sep) {

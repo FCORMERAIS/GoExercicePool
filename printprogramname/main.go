@@ -9,7 +9,7 @@ import (
 func PrintName(s string) {
 	sentence := []rune(s)
 	for i := 0; i < len(sentence); i++ {
-		if sentence[i] != '.' && sentence[i] != '/' {
+		if s[i] != '.' && [i] != '/' {
 			z01.PrintRune(rune(sentence[i]))
 		}
 	}

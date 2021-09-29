@@ -11,7 +11,7 @@ func main() {
 		if err != nil {
 			fmt.Printf(err.Error())
 		}
-		arr := make([]byte, len(os.Args[2]))
+		arr := make([]byte, 14)
 		file.Read(arr)
 		fmt.Println(string(arr))
 		file.Close()

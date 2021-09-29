@@ -3,8 +3,7 @@ package main
 import (
 	"os"
 
-    "github.com/01-edu/z01"
-
+	"github.com/01-edu/z01"
 )
 
 func printStr(s string) {

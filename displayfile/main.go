@@ -7,7 +7,6 @@ import (
 
 func main() {
 	file, err := os.Open("quest8.txt")
-
 	if err != nil {
 		fmt.Printf("error : ", err.Error())
 	}

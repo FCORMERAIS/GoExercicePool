@@ -36,4 +36,5 @@ func main() {
 	z01.PrintRune(rune(' '))
 	z01.PrintRune(rune(points.y1))
 	z01.PrintRune(rune(points.y2))
+	z01.PrintRune(rune('\n'))
 }

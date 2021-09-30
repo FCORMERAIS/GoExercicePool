@@ -18,8 +18,8 @@ func main() {
 		file.Read(arr)
 		for i := 0; i < len(string(arr)); i++ {
 			z01.PrintRune(rune(string(arr)[i]))
-		} 
+		}
 		z01.PrintRune(rune('\n'))
 		file.Close()
-	} 
+	}
 }

@@ -7,7 +7,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 		result = append(result, f(a[i], a[i+1]))
 	}
 	for i := 0; i < len(result); i++ {
-		if result[i] < 0 {
+		if result[i] <= 0 {
 			counter++
 		}
 	}
@@ -16,7 +16,7 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 	}
 	counter = 0
 	for i := 0; i < len(result); i++ {
-		if result[i] > 0 {
+		if result[i] >= 0 {
 			counter++
 		}
 	}

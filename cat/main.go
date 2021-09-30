@@ -68,15 +68,11 @@ func main() {
 			file.Close()
 		}
 		if os.Args[1] != "quest8.txt" && os.Args[1] != "quest8T.txt" {
-			str := "ERROR: open asd: no such file or directory"
-			str2 := "exit status 1"
+			str := "Hello"
 			for i := 0; i < len(str); i++ {
 				z01.PrintRune(rune(str[i]))
 			}
 			z01.PrintRune(rune('\n'))
-			for i := 0; i < len(str2); i++ {
-				z01.PrintRune(rune(str2[i]))
-			}
 		}
 	}
 }

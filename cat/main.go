@@ -36,7 +36,7 @@ func main() {
 			}
 			file.Close()
 		}
-	} else if len(os.Args) == 1 {
+	} else if len(os.Args) == 2 {
 		if os.Args[1] == "quest8.txt" {
 			file, err := os.Open("quest8.txt")
 			if err != nil {

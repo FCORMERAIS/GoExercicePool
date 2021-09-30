@@ -27,6 +27,7 @@ func main() {
 			for i := 0; i < len(str); i++ {
 				z01.PrintRune(rune(str[i]))
 			}
+			z01.PrintRune(rune('\n'))
 			os.Exit(1)
 		}
 		arr = make([]byte, 14)

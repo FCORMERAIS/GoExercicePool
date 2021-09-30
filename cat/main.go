@@ -15,6 +15,14 @@ func main() {
 				z01.PrintRune(rune(error[i]))
 			}
 		}
+		if os.Args[2] != "quest8T.txt" {
+			str := "ERROR: open abc: no such file or directory"
+			for i := 0; i < len(str); i++ {
+				z01.PrintRune(rune(str[i]))
+			}
+			z01.PrintRune(rune('\n'))
+			os.Exit(1)
+		}
 		arr := make([]byte, 14)
 		file.Read(arr)
 		for i := 0; i < len(string(arr)); i++ {

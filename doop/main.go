@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
@@ -30,19 +29,19 @@ func atoi(s string) int {
 func main() {
 	if len(os.Args) == 4 {
 		if os.Args[2] == "+" {
-			fmt.Println(os.Args[1] + os.Args[3])
+			os.Stderr.WriteString(string(atoi(os.Args[1]) + atoi(os.Args[3])))
 		}
 		if os.Args[2] == "*" {
-			fmt.Println(atoi(os.Args[1]) * atoi(os.Args[3]))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) * atoi(os.Args[3])))
 		}
 		if os.Args[2] == "/" {
-			fmt.Println(atoi(os.Args[1]) / atoi(os.Args[3]))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) / atoi(os.Args[3])))
 		}
 		if os.Args[2] == "-" {
-			fmt.Println(atoi(os.Args[1]) - atoi(os.Args[3]))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) - atoi(os.Args[3])))
 		}
 		if os.Args[2] == "%" {
-			fmt.Println(atoi(os.Args[1]) % atoi(os.Args[3]))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) % atoi(os.Args[3])))
 		}
 	}
 }

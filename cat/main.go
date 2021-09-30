@@ -76,7 +76,7 @@ func main() {
 			file.Close()
 		}
 		if os.Args[1] != "quest8.txt" && os.Args[1] != "quest8T.txt" {
-			str := "ERROR: open asd: no such fil or directory"
+			str := "ERROR: open asd: no such file or directory"
 			for i := 0; i < len(str); i++ {
 				z01.PrintRune(rune(str[i]))
 			}

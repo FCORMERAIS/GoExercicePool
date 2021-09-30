@@ -67,8 +67,8 @@ func main() {
 			}
 			file.Close()
 		}
-		if os.Args[1] != "quest8.txt" && os.Args[1] != "quest8T.txt" {
-			str := ""
-		}
+	//	if os.Args[1] != "quest8.txt" && os.Args[1] != "quest8T.txt" {
+			//str := ""
+	//	}
 	}
 }

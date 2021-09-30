@@ -15,7 +15,7 @@ func main() {
 				z01.PrintRune(rune(error[i]))
 			}
 		}
-		if os.Args[2] != "quest8T.txt" {
+		if os.Args[1] != "quest8.txt" {
 			str := "ERROR: open abc: no such file or directory"
 			for i := 0; i < len(str); i++ {
 				z01.PrintRune(rune(str[i]))

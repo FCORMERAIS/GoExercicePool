@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	if len(os.Args) == 2 {
+	if len(os.Args) == 3 {
 		if os.Args[1] == "quest8.txt" && os.Args[2] == "quest8T.txt" {
 			file, err := os.Open("quest8.txt")
 			if err != nil {

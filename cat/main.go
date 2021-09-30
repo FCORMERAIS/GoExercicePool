@@ -22,7 +22,7 @@ func main() {
 		}
 		file.Close()
 		file, err = os.Open("quest8T.txt")
-		if err != nil {
+		if os.Args[2]!= "quest8T.txt" {
 			error := err.Error()
 			for i := 0; i < len(error); i++ {
 				z01.PrintRune(rune(error[i]))

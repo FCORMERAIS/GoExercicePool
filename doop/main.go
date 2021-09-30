@@ -34,15 +34,19 @@ func main() {
 		}
 		if os.Args[2] == "*" {
 			os.Stderr.WriteString(string(atoi(os.Args[1]) * atoi(os.Args[3])))
+			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "/" {
 			os.Stderr.WriteString(string(atoi(os.Args[1]) / atoi(os.Args[3])))
+			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "-" {
 			os.Stderr.WriteString(string(atoi(os.Args[1]) - atoi(os.Args[3])))
+			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "%" {
 			os.Stderr.WriteString(string(atoi(os.Args[1]) % atoi(os.Args[3])))
+			os.Stderr.WriteString("\n")
 		}
 	}
 }

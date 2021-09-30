@@ -72,7 +72,6 @@ func main() {
 			for i := 0; i < len(str); i++ {
 				z01.PrintRune(rune(str[i]))
 			}
-			z01.PrintRune(rune('\n'))
 		}
 	}
 }

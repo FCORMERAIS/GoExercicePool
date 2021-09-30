@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 	"os"
 )
 
@@ -9,15 +9,17 @@ func main() {
 	if len(os.Args) == 2 {
 		file, err := os.Open("quest8.txt")
 		if err != nil {
-			fmt.Printf(err.Error())
+			error := err.Error()
+			for i := 0; i < len(error); i++ {
+				z01.PrintRune(rune(error[i]))
+			}
 		}
 		arr := make([]byte, 14)
 		file.Read(arr)
-		fmt.Println(string(arr))
+		for i := 0; i < len(string(arr)); i++ {
+			z01.PrintRune(rune(string(arr)[i]))
+		} 
+		z01.PrintRune(rune('\n'))
 		file.Close()
-	} else if len(os.Args) == 1 {
-		fmt.Println("File name missing")
-	} else {
-		fmt.Println("Too many arguments")
-	}
+	} 
 }

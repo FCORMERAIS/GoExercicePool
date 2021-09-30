@@ -22,7 +22,7 @@ func main() {
 		}
 		file.Close()
 	}
-	file, err := os.Open("quest8.txt")
+	file, err := os.Open("quest8T.txt")
 	if err != nil {
 		error := err.Error()
 		for i := 0; i < len(error); i++ {

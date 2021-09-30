@@ -23,9 +23,10 @@ func main() {
 		file.Close()
 		file, err = os.Open("quest8T.txt")
 		if os.Args[2] != "quest8T.txt" {
+			str := "ERROR: open abc: no such file or directory"
 			error := err.Error()
-			for i := 0; i < len(error); i++ {
-				z01.PrintRune(rune(error[i]))
+			for i := 0; i < len(str); i++ {
+				z01.PrintRune(rune(str[i]))
 			}
 			os.Exit(1)
 		}

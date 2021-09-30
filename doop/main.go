@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os"
-
 	"fmt"
+
+	"os"
 )
 
 func atoi(s string) int {

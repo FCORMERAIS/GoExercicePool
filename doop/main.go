@@ -105,5 +105,5 @@ func main() {
 			os.Stderr.WriteString("")
 		}
 		os.Stdout.WriteString("\n")
-	}  
+	}
 }

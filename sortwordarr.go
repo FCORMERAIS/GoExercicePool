@@ -26,6 +26,6 @@ func SortWordArr(a []string) {
 	sentence := SortIntegerTabl(a)
 	for i := 0; i < len(sentence)-1; i++ {
 		os.Stderr.WriteString(sentence[i])
-		}
-		os.Stderr.WriteString("\n")
+	}
+	os.Stderr.WriteString("\n")
 }

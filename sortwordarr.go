@@ -26,7 +26,6 @@ func SortWordArr(a []string) {
 	sentence := SortIntegerTable(a)
 	for i := 0; i < len(sentence)-1; i++ {
 		z01.PrintRune(sentence[i])
-		}
-		z01.PrintRune(rune('\n'))
+	}
+	z01.PrintRune(rune('\n'))
 }
-

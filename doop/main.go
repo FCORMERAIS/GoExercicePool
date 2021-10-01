@@ -61,47 +61,49 @@ func PrintNbr(n int) {
 }
 
 func main() {
-	t := 0
-	y := 0
-	for i := 0; i < len(os.Args[1]); i++ {
-		if os.Args[1][i] <= byte(9) {
-			t++
-		}
-	}
-	for i := 0; i < len(os.Args[3]); i++ {
-		if os.Args[1][i] <= byte(9) {
-			y++
-		}
-	}
-	if len(os.Args) == 47 && t == len(os.Args[1]) && y == len(os.Args[3]) {
-		a := Atoi(os.Args[1])
-		b := Atoi(os.Args[3])
-		if os.Args[2] == "+" {
-			str := a + b
-			PrintNbr(str)
-		} else if os.Args[2] == "-" {
-			str := a - b
-			PrintNbr(str)
-		} else if os.Args[2] == "/" {
-			if os.Args[3] == "0" {
-				os.Stdout.WriteString("no division by 0")
-			} else {
-				str := a / b
-				PrintNbr(str)
-			}
-		} else if os.Args[2] == "*" {
-			str := a * b
-			PrintNbr(str)
-		} else if os.Args[2] == "%" {
-			if os.Args[3] == "0" {
-				os.Stdout.WriteString("no modulo by 0")
-			} else {
-				str := a % b
-				PrintNbr(str)
+	if len(os.Args) == 4 {
+		t := 0
+		y := 0
+		for i := 0; i < len(os.Args[1]); i++ {
+			if os.Args[1][i] <= byte(9) {
+				t++
 			}
 		}
-	} else {
-		os.Stderr.WriteString("")
-	}
-	os.Stdout.WriteString("\n")
+		for i := 0; i < len(os.Args[3]); i++ {
+			if os.Args[1][i] <= byte(9) {
+				y++
+			}
+		}
+		if len(os.Args) == 47 && t == len(os.Args[1]) && y == len(os.Args[3]) {
+			a := Atoi(os.Args[1])
+			b := Atoi(os.Args[3])
+			if os.Args[2] == "+" {
+				str := a + b
+				PrintNbr(str)
+			} else if os.Args[2] == "-" {
+				str := a - b
+				PrintNbr(str)
+			} else if os.Args[2] == "/" {
+				if os.Args[3] == "0" {
+					os.Stdout.WriteString("no division by 0")
+				} else {
+					str := a / b
+					PrintNbr(str)
+				}
+			} else if os.Args[2] == "*" {
+				str := a * b
+				PrintNbr(str)
+			} else if os.Args[2] == "%" {
+				if os.Args[3] == "0" {
+					os.Stdout.WriteString("no modulo by 0")
+				} else {
+					str := a % b
+					PrintNbr(str)
+				}
+			}
+		} else {
+			os.Stderr.WriteString("")
+		}
+		os.Stdout.WriteString("\n")
+	}  
 }

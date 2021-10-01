@@ -1,10 +1,10 @@
 package piscine
 
 import (
-	"github.com/01-edu/z01"
+	"os"
 )
 
-func SortIntegerTable(table []string) []string {
+func SortIntegerTabl(table []string) []string {
 	index := 0
 	if len(table) == 1 {
 		return table
@@ -23,9 +23,9 @@ func SortIntegerTable(table []string) []string {
 }
 
 func SortWordArr(a []string) {
-	sentence := SortIntegerTable(a)
+	sentence := SortIntegerTabl(a)
 	for i := 0; i < len(sentence)-1; i++ {
-		z01.PrintRune(sentence[i])
-	}
-	z01.PrintRune(rune('\n'))
+		os.Stderr.WriteString(sentence[i])
+		}
+		os.Stderr.WriteString("\n")
 }

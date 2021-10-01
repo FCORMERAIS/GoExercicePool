@@ -29,31 +29,24 @@ func atoi(s string) int {
 func main() {
 	if len(os.Args) == 4 {
 		if os.Args[2] == "+" {
-			ecrire(string(atoi(os.Args[1]) + atoi(os.Args[3])))
+			os.Stdout.WriteString(string(atoi(os.Args[1]) + atoi(os.Args[3])))
 			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "*" {
-			ecrire(string(atoi(os.Args[1]) * atoi(os.Args[3])))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) * atoi(os.Args[3])))
 			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "/" {
-			ecrire(string(atoi(os.Args[1]) / atoi(os.Args[3])))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) / atoi(os.Args[3])))
 			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "-" {
-			ecrire(string(atoi(os.Args[1]) - atoi(os.Args[3])))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) - atoi(os.Args[3])))
 			os.Stderr.WriteString("\n")
 		}
 		if os.Args[2] == "%" {
-			ecrire(string(atoi(os.Args[1]) % atoi(os.Args[3])))
+			os.Stderr.WriteString(string(atoi(os.Args[1]) % atoi(os.Args[3])))
 			os.Stderr.WriteString("\n")
 		}
-	}
-}
-
-func ecrire(s string) {
-	sentence := []rune(s)
-	for i := 0; i < len(sentence); i++ {
-		os.Stderr.WriteString(string(sentence[i]))
 	}
 }

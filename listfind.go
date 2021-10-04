@@ -12,5 +12,5 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 		}
 		tmp = tmp.Next
 	}
-	return nil
+	return &tmp.Data
 }

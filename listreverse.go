@@ -1,7 +1,7 @@
 package piscine
 
 func ListReverse(l *List) {
-	unMaillon := &List{}
+	unMaillon := &List{Head: nil}
 	for i := 0; i < ListSize(l); i++ {
 		ListPushFront(unMaillon, removeLast(l))
 	}

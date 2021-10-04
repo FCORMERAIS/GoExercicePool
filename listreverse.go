@@ -13,6 +13,6 @@ func removeLast(l *List) interface{} {
 		l.Head = l.Head.Next
 	}
 	result := l.Head
-	l.Head = nil
+	l.Tail = nil
 	return result
 }

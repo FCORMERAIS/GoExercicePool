@@ -6,7 +6,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 	}
 	for i := 0; i <= pos+1; i++ {
 		l.Data = l.Next
-		if l.Next == nil && i < pos+1 {
+		if l.Next == nil && i != pos {
 			return nil
 		}
 	}

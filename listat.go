@@ -1,6 +1,10 @@
 package piscine
 
 func ListAt(l *NodeL, pos int) *NodeL {
+	truc := &List{Head: l.Next}
+	if ListSize(truc) < pos {
+		return nil
+	}
 	if pos == 0 {
 		return l
 	}

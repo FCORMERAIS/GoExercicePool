@@ -11,12 +11,12 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
-	unMaillon := &NodeL{Data: data}
+	unMaillon := &NodeL{Data: data, Next: nil}
 	if l.Head == nil {
 		l.Head = unMaillon
-		l.Tail = nil
+		l.Tail = unMaillon
 	} else {
 		l.Tail.Next = unMaillon
-		l.Tail = nil
+		l.Tail = unMaillon
 	}
 }

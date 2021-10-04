@@ -10,7 +10,7 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 		return nil
 	}
 	for tmp != nil {
-		if comp(tmp, ref) == true {
+		if comp(tmp.Data, ref) == true {
 			return &tmp.Data
 		}
 		tmp = tmp.Next

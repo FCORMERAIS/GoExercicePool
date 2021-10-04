@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 type NodeL struct {
 	Data interface{}
@@ -11,11 +11,11 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
-	unMaillon := &NodeL{Data : data}
+	unMaillon := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = unMaillon
 		l.Tail = nil
-	}else {
+	} else {
 		unMaillon.Next = l.Head
 		l.Head = unMaillon
 	}

@@ -5,6 +5,7 @@ func ListReverse(l *List) {
 	for i := 0; i < ListSize(l); i++ {
 		ListPushFront(unMaillon, removeLast(l))
 	}
+	l = unMaillon
 }
 
 func removeLast(l *List) interface{} {

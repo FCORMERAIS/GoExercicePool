@@ -10,10 +10,10 @@ func ListReverse(l *List) {
 
 func removeLast(l *List) interface{} {
 	tmp := l
-	for tmp.Head.Next != nil {
+	for tmp.Head != l.Tail {
 		tmp.Head = tmp.Head.Next
 	}
-	result := tmp.Head
-	tmp.Head = nil
+	result := tmp.Head.Next
+	l.Tail = tmp.Head
 	return result
 }

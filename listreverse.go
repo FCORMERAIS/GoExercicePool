@@ -12,6 +12,12 @@ func ListReverse(l *List) {
 
 func removeLast(l *List) interface{} {
 	tmp := l
+	if tmp.Head == nil {
+		return nil
+	}
+	if tmp.Head.Next == nil {
+		return tmp.Head
+	}
 	for tmp.Head.Next != l.Tail {
 		tmp.Head = tmp.Head.Next
 	}

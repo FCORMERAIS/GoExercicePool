@@ -4,7 +4,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 	if pos == 0 {
 		return l
 	}
-	for i := 0; i < pos+1; i++ {
+	for i := 0; i <= pos+1; i++ {
 		l.Data = l.Next
 		if l.Next == nil && i != pos-1 {
 			return nil

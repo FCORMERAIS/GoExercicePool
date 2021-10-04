@@ -16,7 +16,7 @@ func ListPushBack(l *List, data interface{}) {
 		l.Head = unMaillon
 		l.Tail = nil
 	} else {
-		unMaillon.Next = l.Head
-		l.Head = unMaillon
+		l.Tail.Next = unMaillon
+		l.Tail = unMaillon
 	}
 }

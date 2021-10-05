@@ -1,23 +1,22 @@
 package piscine
 
 func ListRemoveIf(l *List, data_ref interface{}) {
-	tmp := l
-	if tmp.Head != nil {
-		if tmp.Head == data_ref {
-			unMaillon := &NodeL{Data: nil, Next: nil}
-			unMaillon = l.Head
+	var NodeL1 *NodeL = l.Head
+	if l.Head != nil {
+		if l.Head.Data == data_ref {
+			NodeL1 = l.Head
 			l.Head = l.Head.Next
-			unMaillon.Next = nil
+			NodeL1.Next = l.Head
 		}
 	}
-	if tmp.Head.Next != nil {
-		for tmp != nil {
-			if tmp.Head.Next == data_ref {
-				unMaillon := &NodeL{Data: nil, Next: nil}
-				unMaillon = tmp.Head.Next
-				unMaillon.Next = nil
+	if NodeL1 != nil {
+		for NodeL1.Next != nil {
+			if NodeL1.Next.Data == data_ref {
+				NodeL1.Next = NodeL1.Next.Next
 			}
-			tmp.Head = tmp.Head.Next
+			if NodeL1.Next != nil && NodeL1.Next.Data != data_ref {
+				NodeL1 = NodeL1.Next
+			}
 		}
 	}
 }

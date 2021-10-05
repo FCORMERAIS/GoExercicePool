@@ -15,7 +15,7 @@ func ListSort(l *NodeI) *NodeI {
 				if tmp.Data > tmp.Next.Data {
 					tmp.Data, tmp.Next.Data = tmp.Next.Data, tmp.Data
 				}
-				tmp.Data = tmp.Next.Data
+				tmp = tmp.Next
 			}
 			tmp = l
 		}

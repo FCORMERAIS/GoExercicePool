@@ -14,11 +14,10 @@ func ListRemoveIf(l *List, data_ref interface{}) {
 		for tmp != nil {
 			if tmp.Head.Next == data_ref {
 				unMaillon := &NodeL{Data: nil, Next: nil}
-				unMaillon = l.Head
-				l.Head = l.Head.Next
+				unMaillon = tmp.Head.Next
 				unMaillon.Next = nil
 			}
-			tmp.Head = l.Head.Next
+			tmp.Head = tmp.Head.Next
 		}
 	}
 }

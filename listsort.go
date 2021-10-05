@@ -7,6 +7,9 @@ type NodeI struct {
 
 func ListSort(l *NodeI) *NodeI {
 	tmp := l
+	if tmp == nil {
+		return l
+	}
 	for i := 0; i < 45; i++ {
 		for tmp.Next != nil {
 			if tmp.Data > tmp.Next.Data {
